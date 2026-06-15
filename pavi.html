@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Commerce Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+        header{
+            background:#007bff;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        nav{
+            background:#333;
+            padding:10px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:15px;
+        }
+
+        .products{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:20px;
+            padding:20px;
+        }
+
+        .card{
+            background:white;
+            width:250px;
+            padding:15px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+            text-align:center;
+        }
+
+        .card img{
+            width:100%;
+            height:180px;
+            border-radius:8px;
+        }
+
+        .price{
+            color:green;
+            font-size:20px;
+            margin:10px 0;
+        }
+
+        button{
+            background:#007bff;
+            color:white;
+            border:none;
+            padding:10px 15px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#0056b3;
+        }
+
+        footer{
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:20px;
+        }
+
+        @media(max-width:600px){
+            .products{
+                flex-direction:column;
+                align-items:center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My E-Commerce Store</h1>
+    <p>Online Shopping Website</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Cart</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section class="products">
+
+    <div class="card">
+        <img src="https://m.media-amazon.com/images/I/610LLQC8DhL._AC_SL1500_.jpg" alt="Product">
+        <h3>Smart Watch</h3>
+        <p class="price">₹2,999</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://img.magnific.com/premium-photo/3d-wireless-headphone-image_1222055-1884.jpg" alt="Product">
+        <h3>Headphones</h3>
+        <p class="price">₹1,499</p>
+        <button>Add to Cart</button>
+    </div>
+
+    
