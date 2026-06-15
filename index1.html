@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Management Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg,#4facfe,#00f2fe);
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .container{
+            width:90%;
+            max-width:700px;
+            background:#fff;
+            padding:25px;
+            border-radius:15px;
+            box-shadow:0 0 15px rgba(0,0,0,0.2);
+        }
+
+        h1{
+            text-align:center;
+            color:#333;
+            margin-bottom:20px;
+        }
+
+        .task-form{
+            display:flex;
+            gap:10px;
+            margin-bottom:20px;
+        }
+
+        .task-form input{
+            flex:1;
+            padding:10px;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        .task-form button{
+            background:#007bff;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        .task-form button:hover{
+            background:#0056b3;
+        }
+
+        .task{
+            background:#f5f5f5;
+            padding:15px;
+            margin-bottom:10px;
+            border-radius:8px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .task button{
+            border:none;
+            padding:8px 12px;
+            margin-left:5px;
+            color:white;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        .edit{
+            background:orange;
+        }
+
+        .delete{
+            background:red;
+        }
+
+        .status{
+            color:green;
+            font-weight:bold;
+        }
+
+        @media(max-width:600px){
+            .task-form{
+                flex-direction:column;
+            }
+
+            .task{
+                flex-direction:column;
+                gap:10px;
+                text-align:center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Task Management Application</h1>
+
+    <div class="task-form">
+        <input type="text" placeholder="Enter Task Name">
+        <button>Add Task</button>
+    </div>
+
+    <div class="task">
+        <div>
+            <h3>Design Homepage</h3>
+            <p class="status">Completed</p>
+        </div>
+
+        <div>
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+        </div>
+    </div>
+
+    <div class="task">
+        <div>
+            <h3>Create Login Page</h3>
+            <p class="status">Pending</p>
+        </div>
+
+        <div>
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
